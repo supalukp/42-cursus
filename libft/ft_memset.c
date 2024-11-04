@@ -12,16 +12,17 @@ void *ft_memset(void *s, int c, size_t n)
     return s;
 }
 
+/*
 #include <stdio.h>
 
 int main ()
 {
-    /*char test[10] = "HelloWorld";
+    char test[10] = "HelloWorld";
     ft_memset(test + 5, '.', sizeof(char) * 3);
     for (int i = 0; i < 10; i++)
     {
         printf("%c", test[i]);
-    }*/
+    }
 
     int arr[2] = {0, 145232};
 
@@ -33,4 +34,4 @@ int main ()
     {
         printf("%d ", p[i]);
     }
-}
+}*/
