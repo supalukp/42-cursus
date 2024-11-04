@@ -1,5 +1,7 @@
 #include "libft.h"
 
+//ft_bzero function is replace value in the n bytes by zero('\0')
+
 void ft_bzero(void *s, size_t n)
 {
     unsigned char *p = s;
