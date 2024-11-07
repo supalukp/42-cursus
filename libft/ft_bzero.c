@@ -6,7 +6,7 @@
 /*   By: rose <rose@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 10:04:02 by rose              #+#    #+#             */
-/*   Updated: 2024/11/07 10:04:02 by rose             ###   ########.fr       */
+/*   Updated: 2024/11/07 10:14:58 by rose             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,12 +26,10 @@ void	ft_bzero(void *s, size_t n)
 		p++;
 	}
 }
-/*
-#include <stdio.h>
 
-int	main(void)
-{
-	char test[5] = "Hello";
-	ft_bzero(test+2, 2);
-	printf("%s", test);
-}*/
+// int	main(void)
+// {
+// 	char test[5] = "Hello";
+// 	ft_bzero(test+2, 2);
+// 	printf("%s", test);
+// }
