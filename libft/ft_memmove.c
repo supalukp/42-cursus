@@ -6,7 +6,7 @@
 /*   By: rose <rose@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 10:04:53 by rose              #+#    #+#             */
-/*   Updated: 2024/11/07 10:04:53 by rose             ###   ########.fr       */
+/*   Updated: 2024/11/07 10:09:01 by rose             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,64 +43,43 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
-// void *ft_memmove(void *dest, const void *src, size_t n)
-// {
-//     int i;
-//     int len;
-
-//     i = 0;
-//     if (!dest && !src)
-//         return (NULL);
-//     unsigned char *p = (char *)dest;
-//     unsigned const char *t = (char *)src;
-//     len = ft_strlen(p);
-//     while (i < n && len != 0)
-//     {
-//         p[i] = t[i];
-//         i++;
-//         len--;
-//     }
-//     return (dest);
-// }
-
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
+	int					i;
+	int					len;
 	unsigned char		*p;
-	const unsigned char	*t = (const unsigned char *)src;
+	unsigned const char	*t;
 
-	p = (unsigned char *)dest;
+	i = 0;
 	if (!dest && !src)
 		return (NULL);
-	if (p > t)
+	p = (char *)dest;
+	t = (char *)src;
+	len = ft_strlen(p);
+	while (i < n && len != 0)
 	{
-		// Copy backwards to handle overlap if dest > src
-		while (n--)
-			p[n] = t[n];
-	}
-	else
-	{
-		// Copy forwards if no overlap or dest < src
-		for (size_t i = 0; i < n; i++)
-			p[i] = t[i];
+		p[i] = t[i];
+		i++;
+		len--;
 	}
 	return (dest);
 }
 
-int	main(void)
-{
-	char str[100] = "Learningisfun";
-	char *first, *second;
-	first = str;
-	second = str;
-	printf("Original string :%s\n ", str);
+// int	main(void)
+// {
+// 	char str[100] = "Learningisfun";
+// 	char *first, *second;
+// 	first = str;
+// 	second = str;
+// 	printf("Original string :%s\n ", str);
 
-	// when overlap happens then it just ignore it
-	memcpy((void *)first + 8, (void *)first, 10);
-	printf("memcpy overlap : %s\n ", str);
+// 	// when overlap happens then it just ignore it
+// 	memcpy((void *)first + 8, (void *)first, 10);
+// 	printf("memcpy overlap : %s\n ", str);
 
-	// when overlap it start from first position
-	ft_memmove(second + 8, first, 10);
-	printf("memmove overlap : %s\n ", str);
+// 	// when overlap it start from first position
+// 	ft_memmove(second + 8, first, 10);
+// 	printf("memmove overlap : %s\n ", str);
 
-	return (0);
-}
+// 	return (0);
+// }
