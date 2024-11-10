@@ -6,7 +6,7 @@
 /*   By: rose <rose@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 10:04:43 by rose              #+#    #+#             */
-/*   Updated: 2024/11/07 10:09:21 by rose             ###   ########.fr       */
+/*   Updated: 2024/11/07 10:52:23 by rose             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,6 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char		*p;
 	unsigned const char	*t;
 
-	if (dest == NULL)
-		return (NULL);
 	p = dest;
 	t = src;
 	while (n > 0)
