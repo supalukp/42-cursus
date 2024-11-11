@@ -6,7 +6,7 @@
 /*   By: rose <rose@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 10:04:10 by rose              #+#    #+#             */
-/*   Updated: 2024/11/07 10:04:10 by rose             ###   ########.fr       */
+/*   Updated: 2024/11/11 15:37:39 by rose             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,13 @@
 
 int	ft_isalnum(int c)
 {
-	if (isalpha(c) || isdigit(c))
+	if (ft_isalpha(c) || ft_isdigit(c))
 		return (1);
 	return (0);
 }
 
-/*#include <stdio.h>
-
-int	main(void)
-{
-	int c = '/';
-	printf("%d", isalnum(c));
-
-}*/
+// int	main(void)
+// {
+// 	int c = '/';
+// 	printf("%d", ft_isalnum(c));
+// }
