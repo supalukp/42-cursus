@@ -6,7 +6,7 @@
 /*   By: rose <rose@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 10:05:45 by rose              #+#    #+#             */
-/*   Updated: 2024/11/10 19:52:30 by rose             ###   ########.fr       */
+/*   Updated: 2024/11/11 11:18:49 by rose             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_strrchr(const char *s, int c)
 
 // int main()
 // {
-//     const char test[] = "";
+//     const char test[] = " 123 1";
 //     const char *result = ft_strrchr(test, ' ');
 //     printf("%s", result);
 // }
