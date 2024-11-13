@@ -6,7 +6,7 @@
 /*   By: rose <rose@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 10:04:53 by rose              #+#    #+#             */
-/*   Updated: 2024/11/11 19:03:38 by rose             ###   ########.fr       */
+/*   Updated: 2024/11/13 09:42:28 by rose             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,11 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	i = 0;
 	if (c_dest > c_src)
 	{
-        i = n;
+		i = n;
 		while (i > 0)
 		{
-			c_dest[i -1] = c_src[i -1];
-            i--;
+			c_dest[i - 1] = c_src[i - 1];
+			i--;
 		}
 	}
 	else
