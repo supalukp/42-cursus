@@ -6,13 +6,13 @@
 /*   By: rose <rose@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 10:02:55 by rose              #+#    #+#             */
-/*   Updated: 2024/11/07 10:15:58 by rose             ###   ########.fr       */
+/*   Updated: 2024/11/14 10:59:35 by rose             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*calloc(size_t nmemb, size_t size)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
 	int		i;
 	int		space;

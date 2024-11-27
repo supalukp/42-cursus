@@ -6,7 +6,7 @@
 /*   By: rose <rose@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/15 14:56:51 by rose              #+#    #+#             */
-/*   Updated: 2024/11/15 15:12:55 by rose             ###   ########.fr       */
+/*   Updated: 2024/11/15 16:04:41 by rose             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ int ft_lstsize(t_list *lst)
     int count;
     
     count = 1;
+    if (lst == NULL)
+        return (0);
     while (lst->next != NULL)
     {
         count++;

@@ -6,7 +6,7 @@
 /*   By: rose <rose@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 10:03:54 by rose              #+#    #+#             */
-/*   Updated: 2024/11/07 10:13:48 by rose             ###   ########.fr       */
+/*   Updated: 2024/11/14 13:38:01 by rose             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int	ft_atoi(const char *nptr)
 
 // int main()
 // {
-//     char test[] = " \n -1234151151";
+//     char test[] = " \n 2147483648";
 //     printf("%d\n", ft_atoi(test));
 //     printf("%d\n", atoi(test));
 // }

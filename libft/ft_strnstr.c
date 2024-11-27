@@ -6,7 +6,7 @@
 /*   By: rose <rose@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 10:05:40 by rose              #+#    #+#             */
-/*   Updated: 2024/11/13 14:50:11 by rose             ###   ########.fr       */
+/*   Updated: 2024/11/14 10:54:29 by rose             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,13 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 
 	i = 0;
 	j = 0;
-	if (little == NULL || *little == '\0')
+	if (*little == '\0')
 		return ((char *)big);
 	while (big[i] && i < len)
 	{
 		while (big[i + j] == little[j] && (i + j < len))
 		{
-			if (little[j + 1] == '\0' )
+			if (little[j + 1] == '\0')
 				return ((char *)big + i);
 			j++;
 		}
@@ -42,6 +42,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 
 //     // char *result = ft_strnstr(hay, needle, 12);
 //     // printf("%s", result);
-	
-// 	printf("%s", ft_strnstr("fake", ((void*)0), 3));
+
+// 	printf("%s", ft_strnstr("fake", NULL, 3));
+// 	printf("%s", strnstr("fake", NULL, 3));
 // }
